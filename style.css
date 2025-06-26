@@ -1,36 +1,47 @@
+/* Reset e Fonte */
 * {
-  font-family: 'poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Estilos do cabeçalho*/
 
+/* Cabeçalho */
 header {
-  background-color: #000000;
+  background-color: #000;
 }
 
-/* BODY */
 
+/* Corpo */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f5f5f5;
+  color: #111;
+  transition: all 0.3s ease;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  background: #fff;
+  height: 100vh;
+  position: fixed;
+  border-right: 1px solid #ddd;
+  padding: 20px;
 }
 
 .container-perfil {
   background-color: #f1f1f1;
-  margin: 0px;
-  margin-top: 0px;
   padding: 10px;
-  border-left: solid 2px;
-  border-width: 5px;
+  border-left: solid 5px;
 }
 
 .sidebar-logo {
   text-align: center;
   padding: 20px 10px;
   transition: transform 0.2s;
+  cursor: pointer;
 }
 
 .sidebar-logo:hover {
@@ -44,85 +55,89 @@ body {
   border-radius: 10px;
 }
 
-
-.sidebar {
-  width: 300px;
-  background: #ffffff;
-  height: 100vh;
-  position: fixed;
-  border-right: 1px solid #ddd;
-  padding-top: 20px;
-
+.sidebar-logo p {
+  color: #000;
 }
 
+/* Menu e Submenu */
 .menu-item {
   padding: 15px 25px;
   cursor: pointer;
   display: flex;
   align-items: center;
-  transition: background-color 0.3s;
   position: relative;
   font-size: 25px;
+  color: #333;
+  transition: background-color 0.3s;
 }
 
 .menu-item:hover {
   background-color: #e9e9e9;
+  border-left: #000 solid;
+}
+
+.menu-item img {
+  justify-content: space-between;
+  height: 60px;
+  margin-left: -16px;
 }
 
 .submenu {
   position: absolute;
-  top: 0;
-  left: 200px;
-  background: #2e2e2e;
-  color: #fff;
-  padding: 10px 0;
-  border-radius: 8px;
-  display: none;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  min-width: 200px;
+  top: 15%;
+  left: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  min-width: 180px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 10;
-}
-
-.submenu a {
-  display: block;
-  padding: 10px 20px;
-  color: #fff;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.submenu a:hover {
-  background-color: #444;
+  padding: 10px 0;
+  display: none;
 }
 
 .menu-item:hover .submenu {
   display: block;
 }
 
+.submenu a {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.submenu a:hover {
+  background-color: #f0f0f0;
+}
 
 
-
-/* CSS DOS ICONES */
-
+/* Seção principal (conteúdo inicial) */
 .inicio {
-  margin: 225px;
+  margin-left: 350px;
   margin-top: 10px;
   font-size: 20px;
 }
 
-/* Botões */
-
-.inicio {
-  margin-left: 350px;
+.inicio p {
+  border-bottom: 1px solid #ddd;
 }
 
+.inicio h1 {
+  margin-left: 20px;
+  font-size: 45px;
+}
+
+/* Botões padrão */
 button {
   width: 200px;
   height: 150px;
-  background-color: #ddd;
+  background-color: #fff;
   border: none;
   font-size: 18px;
-  color: #000000;
+  color: #000;
   cursor: pointer;
   border-radius: 40px;
   margin: 10px;
@@ -130,17 +145,59 @@ button {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
   transform: scale(1.05);
+  background-color: #ddd;
 }
 
+/* Botão de tema escuro */
+.button-dark {
+  background-color: #e0e0e0;
+  color: #111;
+  border: none;
+  padding: 10px 16px;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 270px;
+  height: 60px;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
 
-/* ---------- */
+.button-dark:hover {
+  background-color: #434141;
+}
 
-/* Estilo para rodapé */
+/* ------------------- */
+/* Tema escuro */
+body.dark {
+  background: #1a1a1a;
+  color: #f9f9f9;
+}
 
+body.dark .sidebar {
+  background: #2a2a2a;
+}
+
+body.dark .menu-item {
+  color: #ccc;
+}
+
+body.dark .button-dark {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+body.dark .button-dark:hover {
+  background-color: #444;
+}
+
+/* ------------------- */
+/* Rodapé */
 footer {
   background-color: #000;
   color: #fff;
@@ -170,7 +227,6 @@ footer {
 .input-form-newsletter input {
   margin: 0;
 }
-
 
 .card-footer {
   margin: 30px 0;
