@@ -1,0 +1,238 @@
+* {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 20px;
+    margin: 10px;
+}
+
+/* Estilos do cabeçalho*/
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #444;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+}
+
+/* Título centralizado com position absolute */
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+
+}
+
+/* Ícone do menu do usuário */
+
+.user-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: auto;
+}
+
+.user-menu img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  object-fit: cover;
+}
+
+.user-menu img:hover {
+  transform: scale(1.1);
+}
+
+
+
+.user-menu p{
+    text-align: center;
+}
+
+
+/* BODY */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.sidebar {
+  width: 200px;
+  background: #ffffff;
+  height: 100vh;
+  position: fixed;
+  border-right: 1px solid #ddd;
+  padding-top: 20px;
+  margin-top: 10px;
+}
+
+.menu-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+  position: relative;
+  font-size: 18px;
+}
+
+.menu-item:hover {
+  background-color: #e9e9e9;
+}
+
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  background: #2e2e2e;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 8px;
+  display: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  min-width: 200px;
+  z-index: 10;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.submenu a:hover {
+  background-color: #444;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+/* CSS DOS ICONES */
+
+.inicio {
+    margin: 225px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Botões */
+
+button {
+    width: 200px;                    /* largura fixa */
+    height: 150px;                   /* altura fixa */
+    background-color: #ddd;
+    border: none;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 40px;
+    margin: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+/* ---------- */
+
+/* Estilo para rodapé */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding-top: 50px;
+}
+
+footer .container {
+    margin: 0 auto;
+}
+
+.newsletter-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titles-newsletter h1 {
+    font-weight: 16px;
+}
+
+.titles-newsletter h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.input-newsletter {
+    width: 300px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.input-form-newsletter input {
+    margin: 0;
+}
+
+
+.card-footer {
+    margin: 30px 0;
+}
+
+.card-footer span {
+    color: #a2a6b0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card-footer p {
+    font-size: 14px;
+}
+
+.card-footer a {
+    color: #01a4ff;
+    text-decoration: none;
+}
+
+.additional-infos-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ffffff20;
+    margin-top: 50px;
+}
+
