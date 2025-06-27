@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pesquisa de Clientes</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="cliente-body">
+    <div class="cliente-container">
+        <h1>Pesquisa de Clientes</h1>
+
+        <label for="search">Buscar cliente:</label>
+        <div class="input-wrapper">
+            <input type="text" id="search" placeholder="Digite o nome do cliente...">
+            <img src="../assets/lupa.png" alt="Ícone de busca" class="icon-search">
+        </div>
+
+        <table class="tabela-clientes">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="client-list">
+                <tr>
+                    <td>Caio Secco</td>
+                    <td>Caio@email.com</td>
+                    <td>(48) 99999-1234</td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-excluir">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Guilherme Cardoso</td>
+                    <td>gui@email.com</td>
+                    <td>(48) 98888-5678</td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-excluir">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>João Vitor</td>
+                    <td>Joao@email.com</td>
+                    <td>(48) 97777-4321</td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-excluir">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Guilherme Cardoso</td>
+                    <td>gui@email.com</td>
+                    <td>(48) 98888-5678</td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-excluir">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Caio Secco</td>
+                    <td>Caio@email.com</td>
+                    <td>(48) 99999-1234</td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-excluir">🗑️</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+     <a href="../index.html" class="button-voltar">Voltar</a>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

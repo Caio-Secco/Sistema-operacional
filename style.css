@@ -31,6 +31,155 @@ body {
   padding: 20px;
 }
 
+/* Página de clientes */
+
+/* Corpo da página */
+.cliente-body {
+  background-color: #f4f4f4;
+  padding: 40px;
+  margin: 20px auto;
+}
+
+/* Container principal */
+.cliente-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Wrapper do campo de busca + lupa */
+.input-wrapper {
+  position: relative;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+/* Campo de texto */
+.input-wrapper input[type="text"] {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-wrapper img{
+  width: 50px;
+  height: 35px;
+  margin-left: -15px;
+}
+
+/* Ícone da lupa */
+.icon-search {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  opacity: 0.5;
+}
+
+/* Tabela */
+.tabela-clientes {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Cabeçalhos e células */
+th, td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Cabeçalho */
+th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Zebra */
+.tabela-clientes tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Hover */
+.tabela-clientes tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Botões de ação */
+.btn-editar,
+.btn-excluir {
+  background: none;
+  border: none;
+  font-size: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  width: 50px;
+  height: 60px;
+
+}
+
+.btn-editar:hover,
+.btn-excluir:hover {
+  opacity: 1;
+}
+
+.button-voltar{
+   width: 200px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  font-size: 18px;
+  color: #000;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display:flex;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.button-voltar:hover {
+  transform: scale(1.05);
+  background-color: #ddd;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+  .cliente-container {
+    padding: 25px;
+  }
+
+  th, td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .icon-search {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Final Pagina de Clientes */
+
 .container-perfil {
   background-color: #f1f1f1;
   padding: 10px;
