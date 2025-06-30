@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pesquisa de Clientes</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="cliente-body">
+    <div class="cliente-container">
+        <h1>Pesquisa de Produtos</h1>
+
+        <label for="search">Buscar produto:</label> <br /><br />
+        <div class="input-wrapper">
+            <input type="text" id="search" placeholder="Digite a descrição do produto...">
+            <img src="../assets/lupa.png" alt="Ícone de busca" class="icon-search">
+        </div>
+
+        <table class="tabela-clientes">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Código de barra</th>
+                    <th>Estoque</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="client-list">
+                <tr>
+                    <td> <img src="../assets/camiseta-nikee.png"camiseta">Camiseta Nike Preto P</td>
+                    <td>30042002300420</td>
+                    <td>10</td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-excluir">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="../assets/bermuda-nike-verde.png" alt="camiseta"> <strong></strong>Bermuda Nike Verde M</td>
+                    <td>30042002300421</td>
+                    <td>05</td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-excluir">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="../assets/Moletom-adidas.png" alt="camiseta">Moletom Adidas Azul G</td>
+                    <td>30042002300422</td>
+                    <td>07</td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-excluir">🗑️</button>
+                    </td>
+                <tr>
+                    <td> <img src="../assets/boné-vermelho.png" alt="camiseta">Boné Nike vermelho</td>
+                    <td>30042002300423</td>
+                    <td>03</td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-excluir">🗑️</button>
+                    </td>
+                </tr>
+                </tr>
+
+                <tr>
+                    <td> <img src="../assets/moletom-nike.png" alt="moletom">Moletom Nike Branco M</td>
+                    <td>30042002300424</td>
+                    <td>02</td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-excluir">🗑️</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <a href="../index.html" class="button-voltar">Voltar</a>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -71,7 +71,7 @@ h1 {
   border-radius: 4px;
 }
 
-.input-wrapper img{
+.input-wrapper img {
   width: 50px;
   height: 35px;
   margin-left: -15px;
@@ -95,7 +95,8 @@ h1 {
 }
 
 /* Cabeçalhos e células */
-th, td {
+th,
+td {
   text-align: left;
   padding: 12px;
   border-bottom: 1px solid #ddd;
@@ -137,8 +138,8 @@ th {
   opacity: 1;
 }
 
-.button-voltar{
-   width: 200px;
+.button-voltar {
+  width: 200px;
   height: 40px;
   background-color: #fff;
   border: none;
@@ -147,7 +148,7 @@ th {
   cursor: pointer;
   border-radius: 40px;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  display:flex;
+  display: flex;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   text-decoration: none;
@@ -167,7 +168,8 @@ th {
     padding: 25px;
   }
 
-  th, td {
+  th,
+  td {
     font-size: 14px;
     padding: 8px;
   }
@@ -179,6 +181,24 @@ th {
 }
 
 /* Final Pagina de Clientes */
+
+/* Imagem Produtos */
+
+td img {
+  width: 60px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+td img:hover{
+  transform: scale(1.4);
+}
+
+/* Imagem Produtos */
+
 
 .container-perfil {
   background-color: #f1f1f1;
