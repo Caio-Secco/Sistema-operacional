@@ -278,6 +278,7 @@ td img:hover {
   cursor: pointer;
 }
 
+
 .sidebar-logo:hover {
   transform: scale(1.1);
 }
@@ -320,7 +321,7 @@ td img:hover {
   position: absolute;
   top: 15%;
   left: 100%;
-  background: #fff;
+  background: #3a3a3a;
   border: 1px solid #ddd;
   border-radius: 6px;
   min-width: 180px;
@@ -338,13 +339,14 @@ td img:hover {
   display: block;
   padding: 10px 16px;
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-size: 14px;
   transition: background 0.2s;
 }
 
 .submenu a:hover {
   background-color: #f0f0f0;
+  color: #000;
 }
 
 
