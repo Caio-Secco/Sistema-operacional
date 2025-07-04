@@ -38,7 +38,7 @@ body {
 .perfil-container h1 {
   margin-bottom: 20px;
   color: #333;
-  
+
 }
 
 .dados-empresa img {
@@ -52,7 +52,7 @@ body {
 
 
 
-.cart-empresa{
+.cart-empresa {
   background-color: #eeeded;
   padding: 20px;
   border-radius: 10px;
@@ -248,6 +248,152 @@ th {
 
 /* Final Pagina de Clientes */
 
+/* Pagina Vendas */
+
+.vendas-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vendas {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+/* Campo de texto */
+.input-wrapper input[type="text"] {
+  width: 100%;
+  padding: 15px 15px 15px 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.input-wrapper img {
+  width: 50px;
+  height: 35px;
+  margin-left: -15px;
+}
+
+
+.filtro-vendas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.cart-vendas {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 8px 63px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.input-filtro {
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: 100%;
+  background: transparent;
+}
+
+.tabela-vendas {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fcf9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.tabela-vendas th,
+.tabela-vendas td {
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.tabela-vendas th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.btn-editar,
+.btn-excluir {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+
+
+.button-voltar {
+  display: flex;
+  justify-content: center;  
+  align-items: center;    
+  margin: 30px auto 0;
+  padding: 2px 24px;
+  text-decoration: none;
+  background-color: #444;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.button-voltar:hover {
+  background-color: #000;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .filtro-vendas {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cart-vendas,
+  .input-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .input-filtro {
+    width: 100%;
+  }
+
+  .vendas {
+    font-size: 36px;
+  }
+}
+
+
+
 /* Imagem Produtos */
 
 td img {
@@ -268,7 +414,8 @@ td img:hover {
 .container-perfil {
   background-color: #f1f1f1;
   padding: 10px;
-  border-left: solid 5px;
+  border: solid 1px #a2a6b0;
+  border-radius: 20px;
 }
 
 .sidebar-logo {

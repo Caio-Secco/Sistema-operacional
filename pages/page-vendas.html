@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pesquisa de Clientes</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="vendas-body">
+    <div class="vendas-container">
+        <h1 class="vendas">Vendas</h1>
+
+        <label for="pesquisa-nome">Pesquisa Rápida:</label>
+        <div class="input-wrapper">
+            <input type="text" id="pesquisa-nome" placeholder="Digite o nome do cliente...">
+            <img src="../assets/lupa.png" alt="Ícone de busca" class="icon-search">
+        </div>
+
+        <div class="filtro-vendas">
+            <div class="cart-vendas">
+                <input type="text" class="input-filtro" placeholder="CNPJ">
+                <img src="../assets/lupa.png" alt="Ícone de busca" class="icon-search">
+            </div>
+            <div class="cart-vendas">
+                <input type="text" class="input-filtro" placeholder="Telefone">
+                <img src="../assets/lupa.png" alt="Ícone de busca" class="icon-search">
+            </div>
+            <div class="cart-vendas">
+                <input type="text" class="input-filtro" placeholder="E-mail">
+                <img src="../assets/lupa.png" alt="Ícone de busca" class="icon-search">
+            </div>
+            <div class="cart-vendas">
+                <input type="text" class="input-filtro" placeholder="Outro filtro">
+                <img src="../assets/lupa.png" alt="Ícone de busca" class="icon-search">
+            </div>
+        </div>
+
+        <table class="tabela-vendas">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CNPJ</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody class="vendas-list">
+                <tr>
+                    <td>PUMA SPORTS LTDA</td>
+                    <td>05.406.034/0001-02</td>
+                    <td>(48) 99999-1234</td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-excluir">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ZZAB COMÉRCIO DE CALÇADOS LTDA</td>
+                    <td>16.590.234/0001-76</td>
+                    <td>(48) 98888-5678</td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-excluir">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>NEW BRASIL ARTIGOS ESPORTIVOS LTDA</td>
+                    <td>45.075.049/0001-41</td>
+                    <td>(48) 97777-4321</td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-excluir">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ADIDAS DO BRASIL LTDA</td>
+                    <td>42.274.696/0025-61</td>
+                    <td>(48) 98888-5678</td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-excluir">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fisia Comércio de Produtos Esportivos Ltda</td>
+                    <td>59.546.515/0001-34</td>
+                    <td>(48) 99999-1234</td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-excluir">🗑️</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="../index.html" class="button-voltar">Voltar</a>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
