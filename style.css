@@ -228,25 +228,6 @@ th {
   background-color: #ddd;
 }
 
-/* Responsividade básica */
-@media (max-width: 600px) {
-  .cliente-container {
-    padding: 25px;
-  }
-
-  th,
-  td {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  .icon-search {
-    width: 16px;
-    height: 16px;
-  }
-}
-
-/* Final Pagina de Clientes */
 
 /* Pagina Vendas */
 
@@ -347,11 +328,25 @@ th {
   display: flex;
 }
 
-.btn-op{
-  width: 1000px;
+.btn-op {
+  width: 300px;
   height: 60px;
   border-radius: 6px;
-  background-color: #ddd;
+  border: none;
+  background-color: #d2d2d2;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  gap: 100px;
+  margin: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-op:hover {
+  color: #fff;
+  transform: scale(1.05);
+  background-color: #444;
 }
 
 
@@ -382,31 +377,6 @@ th {
   background-color: #ddd;
   border-radius: 8px;
 }
-
-
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .filtro-vendas {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .cart-vendas,
-  .input-wrapper {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .input-filtro {
-    width: 100%;
-  }
-
-  .vendas {
-    font-size: 36px;
-  }
-}
-
 
 
 /* Imagem Produtos */
@@ -529,7 +499,7 @@ td img:hover {
 }
 
 /* Botões padrão */
-button {
+.btn-inicio {
   width: 200px;
   height: 150px;
   background-color: #fff;
@@ -546,8 +516,8 @@ button {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
-  transform: scale(1.05);
+.btn-inicio:hover {
+  transform: scale(1.1);
   background-color: #ddd;
 }
 
@@ -596,58 +566,91 @@ body.dark .button-dark:hover {
 
 /* ------------------- */
 /* Rodapé */
-footer {
-  background-color: #000;
-  color: #fff;
-  padding-top: 50px;
+
+
+
+/* Responsividade básica pagina de Inicio*/
+@media (max-width: 800px) {
+  .cliente-container {
+    padding: 25px;
+  }
+
+  th,
+  td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .inicio h1 {
+    font-size: 30px;
+  }
+
+  .container-perfil {
+    width: 125px;
+  }
+
+  .sidebar {
+    width: 150px;
+  }
+
+  .menu-texto {
+    display: none;
+  }
+
+  .menu-item {
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    margin-top: 5px;
+    transition: transform 0.3s ease
+  }
+
+  .menu-item:hover {
+    border-left: #000 solid 2px;
+  }
+
+  .menu-item img {
+    align-items: center;
+    width: 90px;
+  }
+
+  .button-dark {
+    display: none;
+  }
+
+  .icons{
+    margin-left: -140px;
+  }
+
+  .btn-inicio{
+    width: 130px;
+  }
+
+.texto-btn-inicio{
+  font-size: 15px;
 }
 
-.newsletter-footer {
-  display: flex;
-  justify-content: space-between;
 }
 
-.titles-newsletter h1 {
-  font-weight: 16px;
-}
+/* Responsivo vendas */
+@media (max-width: 768px) {
+  .filtro-vendas {
+    flex-direction: column;
+    gap: 12px;
+  }
 
-.titles-newsletter h2 {
-  font-size: 16px;
-  font-weight: normal;
-}
+  .cart-vendas,
+  .input-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
 
-.input-newsletter {
-  width: 300px;
-  margin-right: 20px;
-  color: #fff;
-}
+  .input-filtro {
+    width: 100%;
+  }
 
-.input-form-newsletter input {
-  margin: 0;
-}
+  .vendas {
+    font-size: 36px;
+  }
 
-.card-footer {
-  margin: 30px 0;
-}
-
-.card-footer span {
-  color: #a2a6b0;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.card-footer p {
-  font-size: 14px;
-}
-
-.card-footer a {
-  color: #01a4ff;
-  text-decoration: none;
-}
-
-.additional-infos-footer {
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #ffffff20;
-  margin-top: 50px;
 }
