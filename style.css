@@ -653,18 +653,8 @@ body.dark .button-dark:hover {
 }
 
 #search{
-  width: 87%;
+  width: 100%;
 }
-
-.btn-editar,
-.btn-excluir {
-  margin: 1px;
-  width: 100px;
-  height: 30px;
-}
-
-
-
 
 }
 
@@ -673,12 +663,13 @@ body.dark .button-dark:hover {
   .filtro-vendas {
     flex-direction: column;
     gap: 12px;
+    width: 80%;
   }
 
   .cart-vendas,
   .input-wrapper {
-    max-width: 100%;
-    width: 100%;
+    max-width: 90%;
+    width: 90%;
   }
 
   .input-filtro {
@@ -688,5 +679,23 @@ body.dark .button-dark:hover {
   .vendas {
     font-size: 36px;
   }
+
+
+  .scroll-horizontal {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.tabela-vendas,
+.tabela-clientes {
+    min-width: 800px;
+    border-collapse: collapse;
+}
+
+.vendas-body{
+  width: 90%;
+  margin: 0px auto;
+}
+
 
 }
