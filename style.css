@@ -279,7 +279,6 @@ th {
 
 .filtro-vendas {
   display: flex;
-  flex-wrap: wrap;
   gap: 16px;
   margin-top: 10px;
 }
@@ -567,6 +566,9 @@ body.dark .button-dark {
 body.dark .button-dark:hover {
   background-color: #444;
 }
+
+
+
 
 
 /* Responsividade básica pagina de Inicio*/
