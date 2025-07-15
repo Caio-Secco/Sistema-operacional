@@ -400,6 +400,16 @@ th {
   font-size: 40px;
 }
 
+/* pagina error*/ 
+
+.error{
+  margin: 20px auto;
+  width: 700px;
+  margin-top: 400px;
+  padding: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
 
 /* Imagem Produtos */
 
@@ -678,6 +688,11 @@ body.dark .button-dark:hover {
 
 #search{
   width: 100%;
+}
+
+.error{
+  max-width: 300px;
+  font-size: 20px;
 }
 
 }
