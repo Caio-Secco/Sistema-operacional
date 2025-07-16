@@ -204,10 +204,15 @@ th {
 
 }
 
-.btn-editar:hover,
+.btn-editar:hover {
+  opacity: 1;
+  background-color: #4dabee;
+  transform: scale(1.05);
+}
+
 .btn-excluir:hover {
   opacity: 1;
-  background-color: #83bbe3;
+  background-color: red;
   transform: scale(1.05);
 }
 
@@ -368,6 +373,14 @@ th {
   color: #fff;
   transform: scale(1.05);
   background-color: #3498DB;
+}
+
+#btn-op-ex:hover{
+  background-color: red;
+}
+
+#btn-op-novo:hover{
+  background-color: #31cc26;
 }
 
 
