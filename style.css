@@ -555,7 +555,7 @@ td img:hover {
   font-size: 18px;
   color: #000;
   cursor: pointer;
-  border-radius: 40px;
+  border-radius: 20px;
   margin: 10px;
   transition: transform 0.3s ease, background-color 0.3s ease;
   display: inline-block;
@@ -566,7 +566,7 @@ td img:hover {
 
 .btn-inicio:hover {
   transform: scale(1.1);
-  background-color: #ddd;
+  background-color: #e8eef5;
 }
 
 /* Botão de tema escuro */
