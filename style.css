@@ -66,24 +66,7 @@ body {
   color: #444;
 }
 
-.button-voltar-dadosempresa {
-  display: block;
-  width: 200px;
-  margin: 3px auto 0;
-  margin-top: -100px;
-  padding: 10px 0;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 25px;
-  font-size: 16px;
-  transition: background-color 0.3s;
-}
 
-.button-voltar-dadosempresa:hover {
-  background-color: #555;
-}
 
 
 
@@ -91,7 +74,7 @@ body {
 .sidebar {
   width: 300px;
   background: #fff;
-  height: 100vh;
+  height: 94%;
   position: fixed;
   border-right: 1px solid #ddd;
   padding: 20px;
@@ -212,7 +195,7 @@ th {
 
 .btn-excluir:hover {
   opacity: 1;
-  background-color: red;
+  background-color: rgb(255, 0, 0);
   transform: scale(1.05);
 }
 
@@ -336,7 +319,7 @@ th {
   background-color: #E1E8ED;
 }
 
-#venda-aberta{
+#venda-aberta {
   color: rgb(78, 78, 225);
 }
 
@@ -375,11 +358,11 @@ th {
   background-color: #3498DB;
 }
 
-#btn-op-ex:hover{
+#btn-op-ex:hover {
   background-color: red;
 }
 
-#btn-op-novo:hover{
+#btn-op-novo:hover {
   background-color: #31cc26;
 }
 
@@ -413,9 +396,9 @@ th {
   font-size: 40px;
 }
 
-/* pagina error*/ 
+/* pagina error*/
 
-.error{
+.error {
   margin: 20px auto;
   width: 700px;
   margin-top: 400px;
@@ -473,7 +456,7 @@ td img:hover {
 
 /* Menu e Submenu */
 .menu-item {
-  padding: 15px 25px;
+  padding: 9px 25px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -481,10 +464,11 @@ td img:hover {
   font-size: 25px;
   color: #333;
   transition: background-color 0.3s;
+  margin-top: 10px;
 }
 
 .menu-item:hover {
-  background-color: #e9e9e9;
+  background-color: #e8eef2;
   border-left: #000 solid;
 }
 
@@ -665,11 +649,11 @@ body.dark .button-dark:hover {
     display: none;
   }
 
-  .icons{
+  .icons {
     margin-left: -140px;
   }
 
-  .btn-inicio{
+  .btn-inicio {
     width: 110px;
     height: 120px;
   }
@@ -683,30 +667,30 @@ body.dark .button-dark:hover {
 
 
 
-.texto-btn-inicio{
-  font-size: 12px;
-}
+  .texto-btn-inicio {
+    font-size: 12px;
+  }
 
-/* Perfil */
+  /* Perfil */
 
-.perfil-container {
-  width: 70%;
-}
+  .perfil-container {
+    width: 70%;
+  }
 
-/* Clientes */
+  /* Clientes */
 
-.cliente-container h1{
-  text-align: center;
-}
+  .cliente-container h1 {
+    text-align: center;
+  }
 
-#search{
-  width: 100%;
-}
+  #search {
+    width: 100%;
+  }
 
-.error{
-  max-width: 300px;
-  font-size: 20px;
-}
+  .error {
+    max-width: 300px;
+    font-size: 20px;
+  }
 
 }
 
@@ -736,18 +720,18 @@ body.dark .button-dark:hover {
   .scroll-horizontal {
     overflow-x: auto;
     max-width: 100%;
-}
+  }
 
-.tabela-vendas,
-.tabela-clientes {
+  .tabela-vendas,
+  .tabela-clientes {
     min-width: 800px;
     border-collapse: collapse;
-}
+  }
 
-.vendas-body{
-  width: 90%;
-  margin: 0px auto;
-}
+  .vendas-body {
+    width: 90%;
+    margin: 0px auto;
+  }
 
 
 }
