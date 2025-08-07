@@ -342,7 +342,7 @@ th {
   height: 60px;
   border-radius: 6px;
   border: solid 1px #dedddd;
-  background-color: #ecf0f2;
+  background-color: #ecf0f2 ;
   color: #000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   justify-content: space-between;
@@ -359,7 +359,7 @@ th {
 }
 
 #btn-op-ex:hover {
-  background-color: red;
+  background-color: #f60b0b;
 }
 
 #btn-op-novo:hover {
